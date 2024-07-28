@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: smaller;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(232, 232, 236);
+}
+
+p {
+  margin: 0px;
+}
+
+.user-card {
+  background-color: aliceblue;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 7px 7px 8px 1px rgba(130, 197, 235, 0.6);
+}
+
+.user-foto {
+  border: 2px solid rgb(255, 179, 0);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+.page-head {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://artside.com.ua/tmp/cache/images/d4/c32/1235553973-480x410-r.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 250px;
+  width: 100%;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.user-profil {
+  color: #ffffff;
+  margin: 5px;
+  letter-spacing: 0.7px;
+  animation: expandSpacing 2s infinite;
+}
+
+@keyframes expandSpacing {
+  0% {
+    letter-spacing: 0.7px;
+  }
+  50% {
+    letter-spacing: 5px;
+  }
+  100% {
+    letter-spacing: 0.7px;
+  }
+}
+
+header ~ p {
+  padding: 5px 0px;
+  width: 180px;
+  margin: 10px;
+  font-weight: bold;
+  color: #302f2f;
+  box-shadow: 0px 1px 0px 0px rgb(118, 197, 207);
+}
+
+.user-full-name,
+.user-first-name,
+.user-last-name {
+  padding: 20px 0px;
+  width: 180px;
+  margin: 10px;
+  font-weight: bold;
+  color: #302f2f;
+  box-shadow: 0px 1px 0px 0px rgb(118, 197, 207);
+}
+
+.user-footer {
+  color: #fff6b2;
+  background-color: #302922;
+  padding-left: 10px;
+}
+
+h3 {
+  font-size: 14px;
+  margin: 0;
+  padding: 10px 5px;
+  color: #ffffff;
+}
+
+.tel {
+  padding: 5px 0px;
+}
+span {
+  font-weight: 400;
+  font-style: italic;
+  color: #646465;
+}
